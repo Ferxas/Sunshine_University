@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Sun, Menu, X, ChevronRight, Search } from 'lucide-react'
-import './index.css'
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
