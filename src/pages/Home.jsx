@@ -7,7 +7,7 @@ const Home = () => {
     <div className="min-h-screen bg-gray-100">
       <main className='flex-grow'>
         <section className="relative h-[70vh] bg-cover bg-center" style={{backgroundImage: About}}>
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="absolute inset-0 bg-black opacity-20 dark:opacity-75 transition duration-100"></div>
           <div className="relative z-10 h-full flex flex-col justify-center items-center text-white text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-4">Bienvenido a Sunshine University</h1>
             <p className="text-xl md:text-2xl mb-8">Iluminando mentes, formando líderes</p>
@@ -17,10 +17,10 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-white dark:bg-gray-900 text-white transition duration-100">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Explora Nuestras Ofertas</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white transition duration-75">Explora Nuestras Ofertas</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-800 transition duration-75">
               {['Programas Académicos', 'Vida Estudiantil', 'Investigación'].map((item, index) => (
                 <div key={index} className="bg-gray-100 p-6 rounded-lg hover:shadow-lg transition duration-300">
                   <h3 className="text-xl font-semibold mb-4">{item}</h3>

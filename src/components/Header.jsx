@@ -19,7 +19,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
     }
 
     return (
-        <header className="bg-white dark:bg-gray-800 shadow-md">
+        <header className="bg-white dark:bg-gray-800 shadow-md transition duration-100">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Sun className="w-8 h-8 text-yellow-500" />
